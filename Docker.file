@@ -1,0 +1,4 @@
+FROM openJDK=17-alpine
+ADD target/saikumar.jar saikuamr.jar
+ENTRYPOINT["java","-jar","saikumar.jar"]
+EXPOSE 8080
